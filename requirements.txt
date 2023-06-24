@@ -1,3 +1,4 @@
+git-lfs
 selenium==4.9.1
 pandas==1.5.3
 transformers==4.29.2
