@@ -24,9 +24,7 @@ my_user = "scrapetesting"
 my_pwd = 'do.ricard0'
 
 # Load the model
-model = BertForSequenceClassification.from_pretrained('bert-base-multilingual-uncased', num_labels=2)
-model.load_state_dict(torch.load('IndoBERT_classifier.pt'))
-model.eval()
+model = torch.jit.load('IndoBERT_classifier.pt')
 
 # Load the tokenizer
 tokenizer = AutoTokenizer.from_pretrained('bert-base-multilingual-uncased')
