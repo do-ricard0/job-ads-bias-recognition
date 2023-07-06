@@ -32,7 +32,7 @@ model.eval()
 tokenizer = AutoTokenizer.from_pretrained('bert-base-multilingual-uncased')
 
 
-# Initialize Firebase
+# Initialize 
 def get_firebase_app():
     try:
         firebase_admin.get_app()
